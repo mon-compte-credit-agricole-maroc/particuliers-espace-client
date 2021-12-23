@@ -15,6 +15,7 @@ swal({
   dangerMode: true,
 })}
 
+
 let inputElt = document.getElementById('input');
 let inputElt1 = document.getElementById('input1');
 let inputElt2 = document.getElementById('input2');
