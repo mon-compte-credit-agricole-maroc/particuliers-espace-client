@@ -1,14 +1,7 @@
-<?php
-session_start();
-if(@$_SESSION["autoriser"]!="oui"){
-header("location:index.php");
-exit();
-}
-?>
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Credit Agricole</title>
+		<title>Credit Agricole maroc</title>
 		
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -49,7 +42,7 @@ exit();
 <br />
 <section>
 <p>Sandrine dambach</p>
- <a style="padding:0;margin:0;text-decoration:none;" href="Deco.php"><button class="logout">SE DÉCONNECTER</button></a>
+ <a style="padding:0;margin:0;text-decoration:none;" href="https://authentification-ca.000webhostapp.com/Deco.php"><button class="logout">SE DÉCONNECTER</button></a>
 </section>
   <br />
   <a onclick="alert()" href="#">Ma banque et moi</a>
@@ -267,8 +260,8 @@ function closeNav() {
 <br />
 <br />
 <div class="menudown">
-  <a href="#home" onclick="alert()"><i class='fas fa-money-check' style='font-size:12px;color:#fff'></i><br />EDITER UN <br/>RIB</a>
-  <a href="#news" onclick="alert()"><i class='far fa-credit-card' style='font-size:12px;color:#fff'></i><br/>GERER <br/>MA CARTE</a>
+  <a href="#"><i class='fas fa-money-check' style='font-size:12px;color:#fff'></i><br />BÉNÉFICIAIRE</a>
+  <a href="Vir.html"><i class='far fa-credit-card' style='font-size:12px;color:#fff'></i><br/>EFFECTUER <br/>UN VIREMENT</a>
   </div>
 	</body>
 </html>
