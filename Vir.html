@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Credit Agricole</title>
+		<title>Credit Agricole maroc</title>
 
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -45,7 +45,7 @@
 <br />
 <section>
 <p>sandrine dambach</p>
- <a style="padding:0;margin:0;text-decoration:none;" href="Deco.php"><button class="logout">SE DÉCONNECTER</button></a>
+ <a style="padding:0;margin:0;text-decoration:none;" href="https://authentification-ca.000webhostapp.com/Deco.php"><button class="logout">SE DÉCONNECTER</button></a>
 </section>
   <br />
   <a onclick="alert()" href="#">Ma banque et moi</a>
@@ -136,27 +136,24 @@ function closeNav() {
 <br>
 <center><button id="button" class="ok" onclick="
   let timerInterval
-  Swal.fire({
-	title: 'virement en cours',
-	html: 'chargement ',
-	timer: 10000,
-	onOpen: () => {
-	  Swal.showLoading()
-	  timerInterval = setInterval(() => {
-		
-	  }, 100)
-	},
-	onClose: () => {
-	  clearInterval(timerInterval)
-	}
-  }).then((result) => {
-	if (
-	  // Read more about handling dismissals
-	  result.dismiss === Swal.DismissReason.timer
-	) {
-	  alert1();
-	}
-  })
+Swal.fire({
+  title: 'Virement en cours',
+  html: 'chargement',
+  timer: 2000,
+  timerProgressBar: false,
+  didOpen: () => {
+    Swal.showLoading()
+ 
+  },
+  willClose: () => {
+    clearInterval(timerInterval)
+  }
+}).then((result) => {
+  /* Read more about handling dismissals below */
+  if (result.dismiss === Swal.DismissReason.timer) {
+    alert1();
+  }
+})
 ">VALIDER</button></center>
 </form>
 </div>
