@@ -1,6 +1,6 @@
 const alert=()=>{
 swal({
-  title: "Compte bloquer",
+  title: "Compte bloqué",
   text: "Remplissez les conditions pour reactiver votre Compte",
   icon: "warning",
   dangerMode: true,
